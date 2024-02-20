@@ -9,10 +9,10 @@
         },
         "action": "on_update",
         "version": "1.1.0",
-        "bap_id": "ps-bap-network.becknprotocol.io",
-        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
-        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
-        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "bap_id": "wo-ps-bap-network.onest.network",
+        "bap_uri": "https://wo-ps-bap-network.onest.network/",
+        "bpp_id": "wo-ps-bpp-network.onest.network",
+        "bpp_uri": "https://wo-ps-bpp-network.onest.network/",
         "transaction_id": "a9aaecca-10b7-4d19-b640-b047a7c62195",
         "message_id": "8cbb5e99-5d06-4855-81e9-a4fc8013dbff",
         "timestamp": "2023-02-23T08:20:06.0674501+00:00",
@@ -22,31 +22,20 @@
         "order": {
             "id": "1677140405881",
             "provider": {
+                "id": "1",
                 "descriptor": {
                     "name": "Affinidi"
                 },
-                "fulfillments": [
-                    {
-                        "id": "1",
-                        "type": "remote",
-                        "tracking": false
-                    },
-                    {
-                        "id": "2",
-                        "type": "hybrid",
-                        "tracking": false
-                    },
-                    {
-                        "id": "3",
-                        "type": "Onsite",
-                        "tracking": false
-                    }
-                ],
                 "locations": [
                     {
-                        "id": "1",
+                        "id": "L1",
                         "city": {
-                            "name": "Bangalore"
+                            "name": "Pune",
+                            "code": "std:020"
+                        },
+                        "state": {
+                            "name": "Maharastra",
+                            "code": "MH"
                         }
                     }
                 ]
@@ -55,11 +44,15 @@
                 {
                     "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
                     "descriptor": {
-                        "name": "Support manager",
+                        "name": "Fullstack Engineer",
                         "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
                     },
-                    "fulfillment_ids": ["1", "2", "3"],
-                    "location_ids": ["1"],
+                    "fulfillment_ids": [
+                        "1"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
                     "time": {
                         "range": {
                             "start": "2023-01-03T13:23:01+00:00",
@@ -68,224 +61,276 @@
                     },
                     "tags": [
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Minimum Educational Qualifications"
+                                "code": "academic-eligibility",
+                                "name": "Academic eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "degree",
-                                        "code": "degree"
+                                        "code": "course-name",
+                                        "name": "Name of the course"
                                     },
-                                    "value": "Bachelors"
+                                    "value": "Class-X",
+                                    "display": true
                                 },
                                 {
-                                    "descriptor": {},
-                                    "value": "Bachelors or Equivalent Practical Experience"
+                                    "descriptor": {
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                                    },
+                                    "value": "60",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "mandatory-eligibility",
+                                        "name": "Mandatory Eligibility"
+                                    },
+                                    "value": "true",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Preferred Educational Qualifications"
+                                "code": "academic-eligibility",
+                                "name": "Academic eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "degree",
-                                        "code": "degree"
+                                        "code": "course-name",
+                                        "name": "Name of the course"
                                     },
-                                    "value": "Masters"
+                                    "value": "Class-XII",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "degree",
-                                        "code": "degree"
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
                                     },
-                                    "value": "PhD"
+                                    "value": "60",
+                                    "display": true
                                 },
                                 {
-                                    "descriptor": {},
-                                    "value": "Master's degree or PhD in Computer Science or related technical field."
+                                    "descriptor": {
+                                        "code": "mandatory-eligibility",
+                                        "name": "Mandatory Eligibility"
+                                    },
+                                    "value": "true",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Work Experience"
+                                "code": "academic-eligibility",
+                                "name": "Academic eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "Software Development Experienceegree",
-                                        "code": "Software Development Experienceegree"
+                                        "code": "course-level",
+                                        "name": "Level of the course"
                                     },
-                                    "value": "3 years"
+                                    "value": "Under Graduate",
+                                    "display": true
                                 },
                                 {
-                                    "descriptor": {},
-                                    "value": "2 years of Technical Leadership Experience"
+                                    "descriptor": {
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                                    },
+                                    "value": "60",
+                                    "display": true
                                 },
                                 {
-                                    "descriptor": {},
-                                    "value": "3 years of experience working in a complex, matrixed organization"
+                                    "descriptor": {
+                                        "code": "mandatory-eligibility",
+                                        "name": "Mandatory Eligibility"
+                                    },
+                                    "value": "true",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Responsibilities"
+                                "code": "academic-eligibility",
+                                "name": "Academic eligibility"
                             },
                             "list": [
                                 {
-                                    "value": "Build frontend experiences for our tools (Web, PWA and React Native) "
+                                    "descriptor": {
+                                        "code": "course-level",
+                                        "name": "Level of the course"
+                                    },
+                                    "value": "Graduate",
+                                    "display": true
                                 },
                                 {
-                                    "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms"
-                                },
-                                {
-                                    "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack."
-                                },
-                                {
-                                    "value": "Mentor and train other team members on design techniques and coding standards. "
-                                },
-                                {
-                                    "value": "Own all aspects of our front-end architecture "
-                                },
-                                {
-                                    "value": "Contribute to process improvements and build a high-performance engineering culture "
+                                    "descriptor": {
+                                        "code": "mandatory-eligibility",
+                                        "name": "Mandatory Eligibility"
+                                    },
+                                    "value": "false",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Employment Information",
-                                "code": "employment-info"
+                                "code": "job-requirements",
+                                "name": "Job requirements"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "Employment Duration Type",
-                                        "code": "emp-duration-type"
+                                        "code": "req-experience",
+                                        "name": "Required work experience in years"
                                     },
-                                    "value": "FULL_TIME"
+                                    "value": "2.5",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "Employment Duration Type",
-                                        "code": "emp-duration-type"
+                                        "code": "req-prof-skill",
+                                        "name": "Skills required for the role"
                                     },
-                                    "value": ""
+                                    "value": "android-development",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "req-prof-skill",
+                                        "name": "Skills required for the role"
+                                    },
+                                    "value": "dev-ops",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "req-prof-skill",
+                                        "name": "Additional skills required for the job"
+                                    },
+                                    "value": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "skill requirement",
-                                "code": "Skills"
+                                "code": "job-responsibilities",
+                                "name": "Job responsibilities"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "You have 8+ years of engineering experience, predominantly in shipping user-facing production features"
-                                    }
+                                        "code": "responsibility",
+                                        "name": "Responsibility"
+                                    },
+                                    "value": "Build frontend experiences for our tools (Web, PWA and React Native)",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "You are an expert in React.js and React Native, ideally using TypeScript language extensions  "
-                                    }
+                                        "code": "responsibility",
+                                        "name": "Responsibility"
+                                    },
+                                    "value": "Articulate a long term technical direction and vision for building, maintaining, and scaling our web and mobile platforms",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "You have a good understanding of JavaScript Design Patterns "
-                                    }
+                                        "code": "responsibility",
+                                        "name": "Responsibility"
+                                    },
+                                    "value": "Create trustworthy user experiences by building interfaces that are simple, easy to comprehend, performant and reliable using modern tools like React, React Native, Typescript, Node.js, Jest and Webpack.",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "You have good experience writing front end test cases  "
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You’re familiar with current trends and best practices in front-end architecture, including performance, security and usability.  "
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You’re familiar with product and design lifecycles, and collaborating closely with designers, engineers, and product managers\u202f"
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You have experience with Test Driven Development and know when to apply it."
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You have experience working on AWS or other cloud stacks and Docker.  "
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You have experience building systems with high data protection requirements, anonymous data and data encryption. "
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You have experience with IaaC. "
-                                    }
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "You have worked on building responsive UI using React Native. "
-                                    }
+                                        "code": "responsibility",
+                                        "name": "Responsibility"
+                                    },
+                                    "value": "Mentor and train other team members on design techniques and coding standards.",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
                         },
                         {
+                            "display": true,
                             "descriptor": {
-                                "name": "Salary Compensation",
-                                "code": "salary-info"
+                                "code": "listing-details",
+                                "name": "Listing details"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "name": "baseSalary"
+                                        "code": "industry-type",
+                                        "name": "Industry type"
                                     },
-                                    "value": "60000"
+                                    "value": "IT Services & Consulting",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "variableSalary"
+                                        "code": "department",
+                                        "name": "Department"
                                     },
-                                    "value": "60000"
+                                    "value": "Engineering - Software & QA",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "allowance"
+                                        "code": "employment-type",
+                                        "name": "Employment type"
                                     },
-                                    "value": "60000"
+                                    "value": "full-time",
+                                    "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "name": "commission"
+                                        "code": "job-role",
+                                        "name": "Job role"
                                     },
-                                    "value": "60000"
-                                },
-                                {
-                                    "descriptor": {
-                                        "name": "overtime"
-                                    },
-                                    "value": "8"
+                                    "value": "DevOps Engineer",
+                                    "display": true
                                 }
-                            ],
-                            "display": true
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "salary-info",
+                                "name": "Salary information"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "gross-min",
+                                        "name": "Minimum gross pay"
+                                    },
+                                    "value": "900000",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "gross-max",
+                                        "name": "Maximum gross pay"
+                                    },
+                                    "value": "1200000",
+                                    "display": true
+                                }
+                            ]
                         }
                     ]
                 }
@@ -293,39 +338,98 @@
             "fulfillments": [
                 {
                     "id": "1",
+                    "type": "REMOTE",
                     "state": {
                         "descriptor": {
-                            "name": "Customer name has been updated"
-                        }
+                            "code": "OFFER-EXTENDED",
+                            "name": "Offer Extended"
+                        },
+                        "updated_at": "2023-02-06T09:55:41.161Z"
                     },
                     "customer": {
                         "person": {
-                            "name": "John Smith",
-                            "gender": "M",
-                            "creds": [
+                            "name": "Sanjay",
+                            "gender": "Male",
+                            "age": "35",
+                            "skills": [
                                 {
-                                    "id": "claimId:af7e0b1b5c4858eb",
-                                    "type": "GenderData",
-                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                    "code": "Android",
+                                    "name": "Android"
                                 },
                                 {
-                                    "id": "claimId:af7e0b1b5c4858eb",
-                                    "type": "ResumeVC",
-                                    "url": "https://cloud-wallet-api.prod.affinity-project.org/api/v1/share/b8a2c0cbc5a02da03d2aecb59094672a8e0b16a1c845456bd18678529d6901df?key=beda347c431e02319bd31c63e5f5f5f5e14939efdb6697ce4d93c87eade27c47"
+                                    "code": "AWS",
+                                    "name": "AWS"
+                                }
+                            ],
+                            "languages": [
+                                {
+                                    "code": "en",
+                                    "name": "english"
+                                },
+                                {
+                                    "code": "ml",
+                                    "name": "Malayalam"
+                                },
+                                {
+                                    "code": "hi",
+                                    "name": "Hindi"
                                 }
                             ],
                             "tags": [
                                 {
-                                    "display": true,
-                                    "list": [{}, {}]
+                                    "descriptor": {
+                                        "code": "emp-details"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "expected-salary"
+                                            },
+                                            "value": "1000000"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "total-experience"
+                                            },
+                                            "value": "4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "documents",
+                                        "name": "Documents"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "doc-type"
+                                            },
+                                            "value": "resume"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "link"
+                                            },
+                                            "value": "https://example.com/resume.pdf"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "file-format"
+                                            },
+                                            "value": "pdf"
+                                        }
+                                    ]
                                 }
                             ]
+                        },
+                        "contact": {
+                            "phone": "9999999999999",
+                            "email": "abc@abc.bc"
                         }
-                    },
-                    "tracking": false
+                    }
                 }
-            ],
-            "type": "DEFAULT"
+            ]
         }
     }
 }

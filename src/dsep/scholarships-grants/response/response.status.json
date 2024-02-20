@@ -15,22 +15,26 @@
         "timestamp": "2023-08-02T09:27:53.607Z",
         "ttl": "PT10M",
         "version": "1.1.0",
-        "bap_id": "ps-bap-network.becknprotocol.io",
-        "bap_uri": "https://ps-bap-network.becknprotocol.io/",
-        "bpp_id": "beckn-sandbox-bpp.becknprotocol.io",
-        "bpp_uri": "https://sandbox-bpp-network.becknprotocol.io/",
+        "bap_id": "fs-ps-bap-network.onest.network",
+        "bap_uri": "https://fs-ps-bap-network.onest.network/",
+        "bpp_id": "fs-ps-bpp-network.onest.network",
+        "bpp_uri": "https://fs-ps-bpp-network.onest.network/",
         "transaction_id": "5007a4bd-f8c1-4859-877e-2bc4b7a4f554",
         "message_id": "5c59bdc4-a2c7-4742-81de-149f91c2b2df"
     },
     "message": {
         "order": {
-            "id": "APP_58605054",
-            "status": "ACTIVE",
+            "id": "12424kh",
             "provider": {
-                "id": "BX213573733",
+                "id": "471",
                 "descriptor": {
                     "name": "XYZ Education Foundation",
-                    "short_desc": "Education Foundation"
+                    "short_desc": "Short Description about the Foundation",
+                    "images": [
+                        {
+                            "url": "url of the image of the provider"
+                        }
+                    ]
                 },
                 "rateable": false
             },
@@ -39,108 +43,325 @@
                     "id": "SCM_63587501",
                     "descriptor": {
                         "name": "XYZ Education Scholarship for Undergraduate Students",
-                        "short_desc": "XYZ Education Scholarship for Undergraduate Students"
+                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
                     },
                     "price": {
                         "currency": "INR",
-                        "value": "25000"
-                    },
-                    "xinput": {
-                        "required": true,
-                        "form": {
-                            "url": "http://localhost:8001/public/getForm/5007a4bd-f8c1-4859-877e-2bc4b7a4f554/da0052a822dc4cdf95ab136b5614d0c9",
-                            "data": {
-                                "name": "James",
-                                "phone": "498674",
-                                "address": "Mumbai",
-                                "needOfScholarship": "higher education",
-                                "docUrl": "http://abc.co/docs"
-                            },
-                            "mime_type": "text/html"
-                        }
+                        "value": "Upto RS.1000 per year"
                     },
                     "rateable": false,
                     "tags": [
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "edu_qual",
-                                "name": "Academic Eligibility"
+                                "code": "background-eligibility",
+                                "name": "Background eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "gr",
-                                        "name": "Grade"
+                                        "code": "social-eligibility",
+                                        "name": "Social eligibility",
+                                        "short_desc": "Social eligibility of the candidate to be eligible"
                                     },
-                                    "value": "Grade 12",
+                                    "value": "SC",
                                     "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "percentage_grade",
-                                        "name": "Percentage/Grade"
+                                        "code": "social-eligibility",
+                                        "name": "Social eligibility",
+                                        "short_desc": "Social eligibility of the candidate to be eligible"
                                     },
-                                    "value": ">= 50",
+                                    "value": "ST",
                                     "display": true
                                 },
                                 {
                                     "descriptor": {
-                                        "code": "passing_year",
-                                        "name": "Passing Year"
+                                        "code": "gender-eligibility",
+                                        "name": "Gender eligibility",
+                                        "short_desc": "Gender of the candidate to be eligible"
                                     },
-                                    "value": "2021",
-                                    "display": false
+                                    "value": "Female",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ann-hh-inc",
+                                        "name": "Maximum Annual Household Income",
+                                        "short_desc": "Maximum Family income per annum above which will render the applicant ineligible"
+                                    },
+                                    "value": "500000",
+                                    "display": true
                                 }
                             ]
                         },
                         {
                             "display": true,
                             "descriptor": {
-                                "code": "benefits",
-                                "name": "Benefits"
+                                "code": "academic-eligibility",
+                                "name": "Academic Eligibility"
                             },
                             "list": [
                                 {
                                     "descriptor": {
-                                        "code": "scholarship-amount",
-                                        "name": "Scholarship Amount"
+                                        "code": "course-name",
+                                        "name": "Name of the course"
                                     },
-                                    "value": "Upto Rs.25000 per year",
+                                    "value": "Class-X",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                                    },
+                                    "value": "60",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "academic-eligibility",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course-name",
+                                        "name": "Name of the course"
+                                    },
+                                    "value": "Class-XII",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                                    },
+                                    "value": "60",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "academic-eligibility",
+                                "name": "Academic Eligibility"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "course-name",
+                                        "name": "Name of the course"
+                                    },
+                                    "value": "Bachelor of Dental Surgery (BDS)",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course-level",
+                                        "name": "Level of the course"
+                                    },
+                                    "value": "Under Graduate",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "course-status",
+                                        "name": "Status of the course"
+                                    },
+                                    "value": "In-Progress",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "min-percentage",
+                                        "name": "Minimum percentage of marks to be obtained in the course for eligibility"
+                                    },
+                                    "value": "60",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "required-docs",
+                                "name": "Required documents"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "mandatory-doc",
+                                        "name": "Mandatory document"
+                                    },
+                                    "value": "Applicant Photo",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "mandatory-doc",
+                                        "name": "Mandatory document"
+                                    },
+                                    "value": "Proof of Identity",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "mandatory-doc",
+                                        "name": "Mandatory document"
+                                    },
+                                    "value": "Proof of Address",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "optional-doc",
+                                        "name": "Optional document"
+                                    },
+                                    "value": "PAN No/Domicile certificate",
+                                    "display": true
+                                }
+                            ]
+                        },
+                        {
+                            "display": true,
+                            "descriptor": {
+                                "code": "additional-info",
+                                "name": "Additional info"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "faq-url",
+                                        "name": "FAQ URL",
+                                        "short_desc": "Link to FAQ"
+                                    },
+                                    "value": "https://www.vs.co.in/vs/resources/68/faq/1015_27.html",
+                                    "display": true
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "tnc-url",
+                                        "name": "T&C URL",
+                                        "short_desc": "Link to terms & conditions"
+                                    },
+                                    "value": "https://www.vs.co.in/vs/resources/68/tnc/1015_27.html",
                                     "display": true
                                 }
                             ]
                         }
                     ],
-                    "category_ids": ["DSEP_CAT_1"]
+                    "fulfillment_ids": [
+                        "VSP_FUL_1113"
+                    ]
                 }
             ],
+            "billing": {
+                "name": "Manjunath",
+                "organization": {
+                    "descriptor": {
+                        "name": "Namma Yatri",
+                        "code": "nammayatri.in"
+                    },
+                    "contact": {
+                        "phone": "+91-8888888888",
+                        "email": "scholarships@nammayatri.in"
+                    }
+                },
+                "address": "No 27, XYZ Lane, etc",
+                "phone": "+91-9999999999"
+            },
             "fulfillments": [
                 {
-                    "id": "DSEP_FUL_63587501",
+                    "state": {
+                        "descriptor": {
+                            "code": "APPLICATION-APPROVED",
+                            "name": "Application Approved"
+                        },
+                        "updated_at": "2023-02-06T09:55:41.161Z"
+                    },
+                    "id": "VSP_FUL_1113",
                     "type": "SCHOLARSHIP",
                     "tracking": false,
-                    "contact": {
-                        "phone": "9876543210",
-                        "email": "maryg@xyz.com"
+                    "agent": {
+                        "person": {
+                            "name": "Ekstep Foundation SPoc"
+                        },
+                        "contact": {
+                            "email": "ekstepsupport@ekstep.com"
+                        }
+                    },
+                    "customer": {
+                        "id": "aadhaar:798677675565",
+                        "person": {
+                            "name": "Jane Doe",
+                            "age": "13",
+                            "gender": "female"
+                        },
+                        "contact": {
+                            "phone": "+91-9663088848",
+                            "email": "jane.doe@example.com"
+                        }
                     },
                     "stops": [
                         {
                             "type": "APPLICATION-START",
                             "time": {
-                                "timestamp": "2022-09-01T00:00:00.000Z"
+                                "timestamp": "2023-07-14T18:30:00.000Z"
                             }
                         },
                         {
                             "type": "APPLICATION-END",
                             "time": {
-                                "timestamp": "2022-10-31T00:00:00.000Z"
+                                "timestamp": "2025-07-13T18:30:00.000Z"
                             }
                         }
                     ]
                 }
             ],
-            "type": "DEFAULT"
+            "payments": [
+                {
+                    "params": {
+                        "bank_code": "IFSC_Code_Of_the_bank",
+                        "bank_account_number": "121212121212",
+                        "bank_account_name": "Account Holder Name"
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "250000"
+                },
+                "breakup": [
+                    {
+                        "title": "Tution fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "150000"
+                        }
+                    },
+                    {
+                        "title": "Hostel fee",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
+                        }
+                    },
+                    {
+                        "title": "Books",
+                        "price": {
+                            "currency": "INR",
+                            "value": "50000"
+                        }
+                    }
+                ]
+            }
         }
     }
 }
