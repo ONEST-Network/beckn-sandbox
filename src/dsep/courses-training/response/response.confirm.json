@@ -88,7 +88,7 @@
                             "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
                             "images": [
                                 {
-                                    "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                                    "url": "https://www.dynamicpixel.co.in/blog/wp-content/uploads/2018/11/English-Comminication-Skills_shutterstock_602226047.jpg"
                                 }
                             ]
                         }
@@ -101,6 +101,9 @@
                         "LANGUAGE-COURSES",
                         "SELF-PACED-COURSES"
                     ],
+                    "fulfillment_ids": [
+						"1"
+					],
                     "rating": "4.5",
                     "rateable": true,
                     "add-ons": [
@@ -188,6 +191,8 @@
             ],
             "fulfillments": [
                 {
+                    "id" : "1",
+                    "type": "ONLINE",
                     "state": {
                         "descriptor": {
                             "code": "NOT-STARTED",
@@ -219,11 +224,11 @@
                             "id": "0",
                             "instructions": {
                                 "name": "content-video-1",
-                                "long_desc": "Description About the Content",
+                                "long_desc": "Improve your Speaking and Conversational skills",
                                 "media": [
                                     {
                                         "mimetype": "video/mp4",
-                                        "url": "https://embedded-video-player-url/play"
+                                        "url": "https://www.youtube.com/watch?v=WLQ6HyFbfKU"
                                     }
                                 ]
                             }
@@ -232,11 +237,11 @@
                             "id": "1",
                             "instructions": {
                                 "name": "content-video-2",
-                                "long_desc": "Description About the Content",
+                                "long_desc": "Improve your Speaking and Conversational skills",
                                 "media": [
                                     {
                                         "mimetype": "video/mp4",
-                                        "url": "https://embedded-video-player-url/play"
+                                        "url": "https://www.youtube.com/watch?v=jPIzJyeuLy8"
                                     }
                                 ]
                             }
