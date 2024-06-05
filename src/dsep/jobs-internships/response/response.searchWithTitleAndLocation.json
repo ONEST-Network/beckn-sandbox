@@ -31,7 +31,7 @@
                         "short_desc": "Short Description about the company",
                         "images": [
                             {
-                                "url": "url of the image of the provider"
+                                "url": "https://url-to-provider-image"
                             }
                         ]
                     },
