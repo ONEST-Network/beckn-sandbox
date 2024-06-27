@@ -72,23 +72,18 @@
             "long_desc": "<p><strong>Course Overview:</strong><br>Welcome to 'Everyday Conversational English,' your key to mastering essential language skills for real-life communication. Tailored for all levels, this course offers:</p><ol><li><strong>Practical Vocabulary:</strong><br>Learn everyday expressions for seamless communication.</li><li><strong>Interactive Role-Playing:</strong><br>Apply knowledge through immersive exercises for real-world scenarios.</li><li><strong>Cultural Insights:</strong><br>Gain cultural nuances to connect authentically in conversations.</li><li><strong>Real-Life Scenarios:</strong><br>Navigate common situations with confidence-building tools.</li><li><strong>Quiz Assessments:</strong><br>Reinforce learning through quizzes for ongoing skill development.</li></ol><p><strong>Why Take This Course:</strong></p><ul><li><strong>Personal & Professional Growth:</strong><br>Enhance personal connections and gain a professional edge.</li><li><strong>Cultural Fluency:</strong><br>Understand and engage with diverse cultures confidently.</li><li><strong>Life-Long Skill:</strong><br>Develop a valuable skill applicable across various life stages.</li></ul><p>Join 'Everyday Conversational English' and elevate your communication for meaningful connections and success.</p>",
             "images": [
               {
-                "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/everyday-conversational-english.png"
-              }
-            ],
-            "media": [
-              {
-                "url": "https://infyspringboard.onwingspan.com/web/courses/infosysheadstart/everyday-conversational-english/preview/"
+                "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnc0-eAxMA7nsBtvwrYaRKiBW_BbxyumoEVA&s"
               }
             ]
           },
           "creator": {
             "descriptor": {
-              "name": "Prof. Emma Sullivan",
+              "name": "Prof. Robert Sullivan",
               "short_desc": "Experienced language educator dedicated to fostering practical conversational skills and cultural fluency",
-              "long_desc": "Hello, I'm Prof. Emma Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
+              "long_desc": "Hello, I'm Prof. Robert Sullivan, your guide in 'Everyday Conversational English.' With over a decade of experience, I'm here to make language learning dynamic and culturally enriching. Let's explore practical communication skills together for personal and professional growth. Join me on this exciting journey!",
               "images": [
                 {
-                  "url": "https://infyspringboard.onwingspan.com/web/assets/images/infosysheadstart/ins/1.png"
+                  "url": "https://static.vecteezy.com/system/resources/thumbnails/005/387/666/small_2x/professor-teaching-in-the-classroom-free-vector.jpg"
                 }
               ]
             }
@@ -212,25 +207,7 @@
             "person": {
               "name": "Jane Doe",
               "age": "13",
-              "gender": "female",
-              "tags": [
-                {
-                  "descriptor": {
-                    "code": "professional-details",
-                    "name": "Professional Details"
-                  },
-                  "list": [
-                    {
-                      "descriptor": {
-                        "code": "profession",
-                        "name": "profession"
-                      },
-                      "value": "student"
-                    }
-                  ],
-                  "display": true
-                }
-              ]
+              "gender": "female"
             },
             "contact": {
               "phone": "+91-9663088848",
@@ -241,38 +218,11 @@
             {
               "id": "0",
               "instructions": {
-                "name": "content-video-1",
-                "long_desc": "Description About the Content",
+                "name": "infosys-springboard-login",
+                "long_desc": "Infosys Springboard Login",
                 "media": [
                   {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "1",
-              "instructions": {
-                "name": "content-video-2",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "video/mp4",
-                    "url": "https://embedded-video-player-url/play"
-                  }
-                ]
-              }
-            },
-            {
-              "id": "2",
-              "instructions": {
-                "name": "content-pdf",
-                "long_desc": "Description About the Content",
-                "media": [
-                  {
-                    "mimetype": "application/pdf",
-                    "url": "https://link-to-the-document/"
+                    "url": "https://infyspringboard.onwingspan.com/web/en/login"
                   }
                 ]
               }
@@ -290,14 +240,14 @@
                     "code": "course-certificate",
                     "name": "Course certificate"
                   },
-                  "value": "https://link-to-certificate"
+                  "value": "https://i.pinimg.com/564x/77/11/28/771128a2f3baf69c2a7d07ecf528b15b.jpg"
                 },
                 {
                   "descriptor": {
                     "code": "course-badge",
                     "name": "Course Badge"
                   },
-                  "value": "https://link-to-badge"
+                  "value": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdRfk9Z4QpBUy6CcC0sEPibLhZWPVsZyb0g&s"
                 }
               ],
               "display": true
@@ -308,7 +258,7 @@
       "quote": {
         "price": {
           "currency": "INR",
-          "value": "150"
+          "value": "0"
         }
       },
       "billing": {
@@ -320,12 +270,9 @@
       "payments": [
         {
           "params": {
-            "amount": "150",
+            "amount": "0",
             "currency": "INR"
-          },
-          "type": "PRE-ORDER",
-          "status": "PAID",
-          "collected_by": "bpp"
+          }
         }
       ]
     }
