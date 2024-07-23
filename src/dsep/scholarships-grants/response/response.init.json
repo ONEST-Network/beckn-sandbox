@@ -25,13 +25,13 @@
     "message": {
         "order": {
             "provider": {
-                "id": "471",
+                "id": "1",
                 "descriptor": {
-                    "name": "XYZ Education Foundation",
-                    "short_desc": "Short Description about the Foundation",
+                    "name": "Buddy4Study",
+                    "short_desc": "Buddy4Study, since 2011, is endeavoring to bridge the gap between scholarship providers and scholarship seekers. As India’s largest scholarship listing portal, we have aided over 9 million students by linking them with the suitable scholarship programmes tailored to their needs.",
                     "images": [
                         {
-                            "url": "https://xyz.com/logo"
+                            "url": "https://d2w7l1p59qkl0r.cloudfront.net/static/images/header-logo.png"
                         }
                     ]
                 },
@@ -63,14 +63,24 @@
             },
             "items": [
                 {
-                    "id": "SCM_63587501",
+                    "id": "001",
                     "descriptor": {
-                        "name": "XYZ Education Scholarship for Undergraduate Students",
-                        "long_desc": "XYZ Education Scholarship for Undergraduate Students"
+                        "name": "Tata Capital Pankh Scholarship",
+                        "long_desc": "The Tata Capital Pankh Scholarship Program 2024-25 is an initiative of Tata Capital Limited to support the higher education of students belonging to economically weaker sections of society.",
+                        "images":[
+                            {
+                                "url": "https://d2w7l1p59qkl0r.cloudfront.net/static/scholarships/banners/document_1719217257.jpg"
+                            }
+                        ]
                     },
+                    "quantity": {
+                        "maximum": {
+                          "count": 25
+                        }
+                      },
                     "price": {
                         "currency": "INR",
-                        "value": "Upto RS.1000 per year"
+                        "value": "25000"
                     },
                     "xinput": {
                         "required": true,
@@ -81,25 +91,15 @@
                             "index": {
                                 "min": 0,
                                 "cur": 0,
-                                "max": 3
+                                "max": 0
                             },
                             "headings": [
-                                "Personal Details",
-                                "Educational Details",
-                                "Financial Information",
-                                "Review & Submit"
+                                "Personal Details"
                             ]
                         },
                         "form": {
                             "mime_type": "text/html",
-                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f",
-                            "resubmit": false,
-                            "auth": {
-                                "descriptor": {
-                                    "code": "jwt"
-                                },
-                                "value": "eyJhbGciOiJIUzI.eyJzdWIiOiIxMjM0NTY3O.SflKxwRJSMeKKF2QT4"
-                            }
+                            "url": "https://6vs8xnx5i7.vidyasaarathi.co.in/loans-kyc/xinput/formid/a23f2fdfbbb8ac402bfd54f"
                         }
                     },
                     "rateable": false,
@@ -294,16 +294,7 @@
                                         "name": "FAQ URL",
                                         "short_desc": "Link to FAQ"
                                     },
-                                    "value": "https://www.vs.co.in/vs/resources/68/faq/1015_27.html",
-                                    "display": true
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "tnc-url",
-                                        "name": "T&C URL",
-                                        "short_desc": "Link to terms & conditions"
-                                    },
-                                    "value": "https://www.vs.co.in/vs/resources/68/tnc/1015_27.html",
+                                    "value": "https://www.buddy4study.com/page/the-tata-capital-pankh-scholarship-programme#faqs",
                                     "display": true
                                 }
                             ]
@@ -314,7 +305,7 @@
                         "L2"
                     ],
                     "fulfillment_ids": [
-                        "VSP_FUL_1113"
+                        "1"
                     ]
                 }
             ],
@@ -342,7 +333,7 @@
                         },
                         "updated_at": "2023-02-06T09:55:41.161Z"
                     },
-                    "id": "VSP_FUL_1113",
+                    "id": "1",
                     "tracking": false,
                     "agent": {
                         "person": {
@@ -392,28 +383,28 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "250000"
+                    "value": "25000"
                 },
                 "breakup": [
                     {
                         "title": "Tution fee",
                         "price": {
                             "currency": "INR",
-                            "value": "150000"
+                            "value": "15000"
                         }
                     },
                     {
                         "title": "Hostel fee",
                         "price": {
                             "currency": "INR",
-                            "value": "50000"
+                            "value": "5000"
                         }
                     },
                     {
                         "title": "Books",
                         "price": {
                             "currency": "INR",
-                            "value": "50000"
+                            "value": "5000"
                         }
                     }
                 ]
