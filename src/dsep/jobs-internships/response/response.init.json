@@ -23,7 +23,13 @@
             "provider": {
                 "id": "1",
                 "descriptor": {
-                    "name": "Affinidi"
+                    "name": "Affinidi",
+                    "short_desc": "At Affinidi, our vision is to revolutionise the current paradigm of digital identity, empowering individuals to reclaim ownership of data, regain control over digital identities, and actively engage in safeguarding consent while respecting privacy",
+                    "images": [
+                        {
+                            "url": "https://d2cou69u9i8br4.cloudfront.net/cdn/ff/kEWVoQYZuNuC3UQWjHVH2yvT6EfDGQRw6YI4OgKlLm4/1694162824/public/block_content_image/logo1_0.svg"
+                        }
+                    ]
                 },
                 "locations": [
                     {
@@ -41,10 +47,15 @@
             },
             "items": [
                 {
-                    "id": "a23f2fdfbbb8ac402bf259d75402eb0792f50c095f7d08a55475e7af1c2dadca",
+                    "id": "001",
                     "descriptor": {
-                        "name": "Fullstack Engineer",
-                        "long_desc": "We’re on a search for a Staff Mobile Developer with the following attributes: Critical Thinking- You are able to skillfully conceptualise, apply, analyse and evaluate information gathered from observation, experience or communication and use it as a guide to action Data-Driven attitude — You often propose solutions or make a point in a logical and objective manner, substantiated with accurate data and evidence Dealing with Ambiguity — You can effectively cope with change and uncertainty, and are comfortable when things are up in the air Goal-oriented — You are driven and can be counted on to exceed goals. You steadfastly push yourself and others to achieve results all the time Problem Solving — You can easily identify and solve complex problems in a methodological manner "
+                        "name": "Senior Software Engineer",
+                        "long_desc": "We are on search of an experienced Senior Full Stack Engineer to join our Elements team. In this role, you will be responsible for the comprehensive development of a multicomponent platform, including building SDKs, using both backend and frontend skills. Your responsibilities will range from designing system architecture to high-level programming, performance testing, and systems integration.",
+                        "images": [
+                            {
+                              "url": "https://img.freepik.com/free-vector/man-search-hiring-job-online-from-laptop_1150-52728.jpg"
+                            }
+                          ]
                     },
                     "fulfillment_ids": [
                         "1"
@@ -216,7 +227,7 @@
                                         "code": "req-experience",
                                         "name": "Required work experience in years"
                                     },
-                                    "value": "2.5",
+                                    "value": "8",
                                     "display": true
                                 },
                                 {
